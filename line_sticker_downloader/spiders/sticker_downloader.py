@@ -6,7 +6,7 @@ import scrapy
 class StickerdownloaderSpider(scrapy.Spider):
     name = 'StickerDownloader'
     allowed_domains = ['https://store.line.me/stickershop/']
-    start_urls = ['https://store.line.me/stickershop/product/1316911']
+    start_urls = ['https://store.line.me/stickershop/product/27976']
 
     def parse(self, response):
         ul = response.xpath('//ul[contains(@class, "FnStickerList")]')
